@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StrideScan | Download</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-5-strong">
+      <div class="container-fluid">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./download">Download</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#">Tutorial</a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="background"></div>
+      <div class="maincontain maincont">
+        
+        
+        <h1 class="header">Installation</h1>
+        <p class="welcometext">Welcome to StrideScan, a tool to enhance your sprinting performance through realtime form analysis. Follow these steps to get started:</p>
+        
+
+        <p class="prereq">Prerequisites</p>
+        <p class="prereqtext">Ensure you have Python installed on your system. StrideScan is tested with Python 3.11 and above. You can download Python from the <a href="https://www.python.org/downloads/">official website</a>.</p>
+        
+      </div>
+
+      <div class="inspirtation">
+        <h1 class="inspirationtitle">Setup</h1>
+        <ol class="setuplist">
+            <li>
+              <strong>Download the code</strong>:
+              <ul>
+                <li>Option 1: <strong>Git</strong>: If you have git installed, you can clone the repository using the following command in your terminal or command prompt:
+                    <br><pre><code class="code">git clone https://github.com/clewner/stridescanapp.git</code></pre>
+                </li>
+                <li>Option 2: <strong>GitHub Zip Download</strong>: If you do not have git installed, you can download the <a href="https://github.com/clewner/stridescanapp">repository</a> as a zip file from GitHub and extract it on your local machine.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Navigate to the StrideScan folder</strong>:
+              Open your terminal or command prompt and navigate to the StrideScan directory that you have cloned or downloaded and extracted.
+              <br><pre><code class="code">cd path/to/stridescanapp</code></pre>
+            </li>
+            <li>
+              <strong>Install Required Libraries</strong>:
+              StrideScan requires certain Python libraries to function. Install them using the following command:
+              <br><pre><code class="code">pip install -r requirements.txt</code></pre>
+            </li>
+          </ol>
+          <h1 class="inspirationtitle">Preparing for Analysis</h1>
+          <ol class="setuplist">
+            <li>
+              <strong>Place Your Video</strong>:
+              Before running the analysis, rename the video you want to analyze to <code>input.mp4</code> and place it into the "input" folder located within the StrideScan directory. Ensure that your file is in MP4 format.
+            </li>
+            <li>
+              <strong>Run the Program</strong>:
+              With the video in place, initialize the main loop of StrideScan with the following command:
+              <br><pre><code class="code">python mainloop.py</code></pre>
+            </li>
+            <li>
+              <strong>Follow On-Screen Instructions</strong>:
+              The program will provide instructions on how to proceed with the analysis. Follow these instructions as prompted.
+            </li>
+          </ol>
+          <h1 class="inspirationtitle">After Running StrideScan</h1>
+            <ol class="setuplist inspobottom">
+                <li>
+                <strong>Review Output Video</strong>:
+                Once the analysis is complete, you will find the output video in the "output" folder within the StrideScan directory.
+                </li>
+                <li>
+                <strong>Check Terminal for Feedback</strong>:
+                The terminal will display feedback based on the video analysis. Ensure to review the feedback for any additional insights into your performance.
+                </li>
+            </ol>
+
+            <p class="inspirationtext borde">If you encounter any issues or have any questions, please feel free to open an issue on this repository or contact me at <a href="mailto:isaac.saxonov@gmail.com">isaac.saxonov@gmail.com</a>.</p>
+
+            <p class="inspirationtext">Thank you for using StrideScan!</p>
+      </div>
+
+
+
+
+      <div class="footer">
+        <p class="footertext">© 2023 Isaac Saxonov. All rights reserved.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+  
+  </body>
+</html>

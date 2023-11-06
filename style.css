@@ -1,0 +1,347 @@
+/* Define the color RGB values */
+/* Define the color RGB values */
+:root {
+  --bs-body-bg-rgb: 3, 3, 10; /* Very dark blue, almost black */
+  --bs-primary-rgb: 0, 13, 30; /* Darker blue */
+  --bd-accent-rgb: 10, 20, 15; /* Dark green, almost black */
+  --bd-violet-rgb: 25, 20, 35; /* Dark violet */
+  --bd-pink-rgb: 40, 10, 25; /* Dark magenta */
+}
+
+
+html{
+  background-color: black;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: black !important;
+  
+}
+
+/* Now, you can start writing other styles, using the above variables */
+
+/* Apply the gradient to a section */
+.hero-section {
+
+  background-image: 
+    linear-gradient(
+      180deg, 
+      rgba(var(--bs-body-bg-rgb), 0.01), 
+      rgba(var(--bs-body-bg-rgb), 1) 85%
+    ),
+    radial-gradient(
+      ellipse at top left, 
+      rgba(var(--bs-primary-rgb), 0.5), 
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at top right, 
+      rgba(var(--bd-accent-rgb), 0.5), 
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center right, 
+      rgba(var(--bd-violet-rgb), 0.5), 
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center left, 
+      rgba(var(--bd-pink-rgb), 0.5), 
+      transparent 50%
+    );
+}
+
+/* Your other styles go here */
+
+.maincontain{
+    height:800px;
+    width:100%;
+    background: transparent;
+  
+  display: block;
+  position: relative;
+}
+
+.maincont{
+  height:550px;
+}
+
+.background{
+  position: absolute;
+  top:0;
+  left:0;
+  display: block;
+  width:100%;
+  height:800px;
+  background: rgb(0,0,0);
+  background: linear-gradient(17deg, rgba(0,0,0,1) 44%, rgba(3,2,51,1) 57%, rgba(5,5,57,1) 66%, rgba(26,5,66,1) 83%, rgba(55,4,79,1) 89%, rgba(75,48,88,1) 95%);
+}
+
+
+
+
+
+.header{
+  padding-top:100px;
+  color:white;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:80px;
+  text-align: center;
+  display: block;
+}
+
+.bigbutton{
+  position: relative;
+  display: block;
+  left:50%;
+  transition:0.3s;
+  transform: translateX(-50%);
+  background: blueviolet !important;
+  border-color: blueviolet !important;
+}
+
+
+
+.bigbutton:hover{
+  background: rgb(113, 34, 186) !important;
+  border-color: rgb(113, 34, 186) !important;
+}
+
+.btn-xl {
+  padding: 0.75rem 1.5rem !important; /* Adjust the padding to make the button larger */
+  font-size: 1.25rem !important; /* Adjust the font size as needed */
+  line-height: 1.5 !important; /* Adjust the line height as needed */
+  border-radius: 0.3rem !important; /* Adjust the border radius as needed */
+}
+
+.cog{
+  transition: 0.3s;
+  transform: scale(1.2);
+  margin-right:6px;
+  margin-bottom:4px;
+}
+
+.bigbutton:hover .cog{
+  transform: scale(1.2) rotate(-45deg);
+}
+
+.vid{
+  display: block;
+  max-width: 600px;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  text-align: center;
+  border-radius:5px;
+}
+
+.shorttext{
+  color:white;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:30px;
+  text-align: center;
+}
+
+.versiontext{
+  color:rgb(146, 146, 146);
+  position:relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:15px;
+  text-align: center;
+}
+
+.navbar{
+  position: relative !important;
+  background-color: rgb(44, 12, 74) !important;
+}
+
+.smalltext{
+  color:rgb(118, 118, 118);
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:20px;
+  text-align: center;
+}
+
+.inspirtation{
+  background:transparent;
+  position: relative;
+}
+
+.inspirationtitle{
+  border-top:5px;
+  border-top: solid;
+  border-color: rgb(118, 118, 118);
+  padding-top:20px;
+  color:white;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:35px;
+  text-align: left;
+  display: block;
+}
+
+.inspobottom{
+  padding-bottom:30px;
+  border-bottom:5px;
+  border-bottom: solid;
+  border-color: rgb(118, 118, 118);
+}
+
+.inspirationtext{
+  color:rgb(118, 118, 118);
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:20px;
+  text-align: left;
+}
+
+.setuplist{
+  color:white;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:16px;
+  text-align: left;
+}
+
+.welcometext{
+  color:rgb(186, 186, 186);
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:25px;
+  text-align: center;
+}
+
+.prereq{
+  padding-top:20px;
+  color:white;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:35px;
+  text-align: left;
+  display: block;
+}
+
+.code-container {
+  position: relative;
+  display: inline-block;
+}
+
+.code-container .copy-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+pre {
+  position: relative;
+  display: inline-block !important;
+  background-color: #f8f9fa;
+  border: 1px solid #dfdfdf;
+  border-radius:1px;
+}
+
+.code {
+  padding-left:4px;
+  padding-right:4px;
+  color: black; /* This is a slightly orange color */
+}
+
+.prereqtext{
+  color:rgb(255, 255, 255);
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:20px;
+  text-align: left;
+}
+
+.borde{
+  padding-top:40px;
+}
+
+.footer{
+  margin-top:50px;
+  position: relative;
+  display: block;
+  background-color: black;
+	left:50%;
+	transform:translateX(-50%);
+	bottom:0;
+	max-width: 600px;
+  color:rgb(118, 118, 118);
+	text-align: left;
+	border-top: 2px solid rgb(118, 118, 118);
+}
+
+
+@media screen and (max-width:720px) {
+  .vid{
+    width: 84%;
+  }
+
+  .footer, .shorttext, .header, .versiontext, .smalltext{
+    width: 84%;
+  }
+
+  .inspirationtext{
+    width:84%;
+  }
+
+  .inspirationtitle{
+    width:84%;
+  }
+
+
+}
+
+@media screen and (max-width: 570px) {
+
+  .maincontain{
+    height:730px;
+  }
+
+  .shorttext{
+    font-size: 26px;
+  }
+
+  .smalltext{
+    font-size:17px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header{
+    font-size: 50px;
+  }
+}
