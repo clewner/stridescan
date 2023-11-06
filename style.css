@@ -212,6 +212,7 @@ body{
 }
 
 .setuplist{
+  overflow: hidden;
   color:white;
   position: relative;
   left:50%;
@@ -300,11 +301,16 @@ pre {
 
 
 @media screen and (max-width:720px) {
+
+  .setuplist, .prereq, .prereqtext{
+    width:84%;
+  }
+
   .vid{
     width: 84%;
   }
 
-  .footer, .shorttext, .header, .versiontext, .smalltext{
+  .footer, .shorttext, .header, .versiontext, .smalltext, .welcometext{
     width: 84%;
   }
 
@@ -325,6 +331,10 @@ pre {
     height:730px;
   }
 
+  .maincont{
+    height:640px;
+  }
+
   .shorttext{
     font-size: 26px;
   }
@@ -338,10 +348,23 @@ pre {
   .header{
     font-size: 60px;
   }
+
+  .maincont{
+    height:640px;
+  }
+}
+
+@media screen and (max-width:435px) {
+  .maincont{
+    height:700px;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .header{
     font-size: 50px;
+  }
+  .maincont{
+    height:730px;
   }
 }
