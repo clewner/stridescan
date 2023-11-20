@@ -352,7 +352,16 @@ pre {
 }
 
 .newfooter{
-  margin-top: 20px;
+  margin-top:50px;
+  position: relative;
+  display: block;
+  background-color: black;
+	left:50%;
+	transform:translateX(-50%) translateY(-155px);
+	max-width: 600px;
+  color:rgb(118, 118, 118);
+	text-align: left;
+	border-top: 2px solid rgb(118, 118, 118);
 }
 
 
