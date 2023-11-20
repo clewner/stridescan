@@ -179,6 +179,10 @@ body{
   position: relative;
 }
 
+.topneg{
+  transform: translateY(-155px);
+}
+
 .inspirationtitle{
   border-top:5px;
   border-top: solid;
@@ -220,6 +224,53 @@ body{
   max-width:600px;
   font-size:16px;
   text-align: left;
+}
+
+.newsetuplist{
+  overflow: hidden;
+  color:white;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:19px;
+  line-height:1.6em;
+  text-align: left;
+}
+
+.aboutlist{
+  overflow: hidden;
+  color:white;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:600px;
+  font-size:19px;
+  text-align: left;
+  line-height:1.6em;
+  padding-left: 0;
+}
+
+.modeldemo{
+  width:100%;
+}
+
+.aboutlist li{
+  margin-bottom: 20px;
+  list-style:none;
+}
+
+.aboutlist li p{
+  padding:0;
+  padding-top:8px;
+  margin:0;
+  margin-left:20px;
+}
+
+.smalltitle{
+  font-size:25px;
+  margin:0;
+  margin-top:20px;
 }
 
 .welcometext{
@@ -285,6 +336,7 @@ pre {
   padding-top:40px;
 }
 
+
 .footer{
   margin-top:50px;
   position: relative;
@@ -299,10 +351,14 @@ pre {
 	border-top: 2px solid rgb(118, 118, 118);
 }
 
+.newfooter{
+  margin-top: 20px;
+}
+
 
 @media screen and (max-width:720px) {
 
-  .setuplist, .prereq, .prereqtext{
+  .setuplist, .prereq, .prereqtext, .newsetuplist, .aboutlist{
     width:84%;
   }
 
