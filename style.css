@@ -375,9 +375,10 @@ pre {
     width: 84%;
   }
 
-  .footer, .shorttext, .header, .versiontext, .smalltext, .welcometext{
+  .footer, .shorttext, .header, .versiontext, .smalltext, .welcometext, .newfooter{
     width: 84%;
   }
+  
 
   .inspirationtext{
     width:84%;
@@ -388,6 +389,12 @@ pre {
   }
 
 
+}
+
+@media screen and (max-width: 600px){
+  .headmethod{
+    font-size: 55px;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -412,6 +419,10 @@ pre {
 @media screen and (max-width: 500px) {
   .header{
     font-size: 60px;
+  }
+
+  .headmethod{
+    font-size: 50px;
   }
 
   .maincont{
